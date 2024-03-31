@@ -1,0 +1,28 @@
+html {
+    font-size: 30px; 
+    font-family:serif;
+    background-color: #3f3f3f;
+}
+body{
+    width: 800px;
+    margin:0 auto;
+    padding: 10px 20px 10px 20px ;
+}
+img{
+    display: block;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    margin:0;
+    padding: 20px 0;
+    color: aliceblue;
+    text-shadow: 2px 2px grey;
+}
+p {
+    font-size: 20px;
+    text-align: center;
+    color: aliceblue;
+    padding: 10px;
+}
+
