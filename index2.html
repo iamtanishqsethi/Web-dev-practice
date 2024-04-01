@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            html forms
+        </title>
+    </head>
+    <body>
+        <h1>HTML FORMS</h1>
+        <form>
+            <label for="username">Enter username</label><!--for the particular id-->
+            <input type="text" id="username"><!--id for every tag should be unique , we can id to any tag -->
+            <br>
+            <label for="email">Enter email</label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="password"> enter password</label>
+            <input type="password" id="password" required><!-- required makes the field necessary to fill-->
+            <!-- the name for an input field helps in backend developing and also helpfull in forms like radio buttons -->
+            <p>Select your age</p>
+            <input type="radio" name="age" value="0-25" id="option1">
+            <label for="oprion1">0-25</label><br>
+            <input type="radio" name="age" value="26-50" id="option2">
+            <label for="oprion2">26-50</label><br>
+            <input type="radio" name="age" value="50+" id="option3">
+            <label for="oprion3">50+</label><br>     
+            <br>
+            <label for="question">Select option</label>
+            <select name="question" id="question">
+                <option value="no">none</option>
+                <option value="o1">option 1</option>
+                <option value="o2">option 2</option>
+                <option value="o3">option 3</option>
+            </select>
+            <br><br>
+            <label for="bio">Enter your bio</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+            <br>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+</html>

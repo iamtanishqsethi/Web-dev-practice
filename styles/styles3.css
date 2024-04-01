@@ -1,0 +1,41 @@
+h1{
+    color: crimson;
+    background-color: black;
+    font-size: 40px;
+    text-align: center;
+}
+p{
+    color: grey;
+    font-size: 25px;
+    text-align: center;
+    font-family: cursive;
+}
+ul{
+    border: 5px solid yellow;
+}
+li{
+    list-style-type:lower-roman;
+}
+/*Inline Elements
+- do not take much space , than there contents need 
+- example: span , image , strong , etc*/
+/*Block Level elements 
+- take up the hole width of the page regardless of content
+- p,div,h1,h2,etc*/
+/*we can make a inline element as a block level ements  by using
+display:block; 
+and can also be down vice a versa */
+
+/*Margin: It is the space around an element.
+Padding: It is the space between the element and the related content inside it. 
+
+note - block level elemnnts have margin on all sides whereas inline elements have margin on left and right  only
+*/
+div{
+    border: 2px solid red;
+    margin: 20px;
+    padding: 20px;
+}
+/*we can make an inline element 
+diplay:inline-block
+which makes it have margin and padding on all sides  */
