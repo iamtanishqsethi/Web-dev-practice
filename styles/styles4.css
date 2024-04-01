@@ -1,0 +1,10 @@
+/* p.error{
+    color: red;
+}
+p.success{
+    color: green;
+} */
+div .error{/*to select error class inside the div */
+    color: violet;
+}
+/*HTML elements can inherit CSS properties that are applied to their parents */
