@@ -1,0 +1,56 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex-container{
+    display: flex;
+    background-color: #fff;
+    flex-wrap: wrap;/*after a moment when the browser is shrinking the element might reduce in the size  we need to scroll the page to see it */
+    /*to avoid that we use flex wrap so that after a certain limit the element will move/wrap to the next line */
+    /*flex-wrap: wrap-reverse;*//*the element will wrap above instead of going down*/
+    flex-flow:column;
+    justify-content: center;/*applied to current axis , align items will be applied to alternate/cross axis*/
+    height: 800px;
+}
+/*.flex-container::after{  now we get the same output using float which we previously got using flex
+    content: "";
+    display: block;
+    clear:both;
+}*/
+.box{
+    height: 100px;
+    flex: 0 0 200px;
+    /*min-width: 200px;*/
+    /*flex-basis: 200px;*//*starting width */
+    /*width: 320px;*/
+    
+    /*flex-grow: 1;*/ /*all elements in the box class will grow on the same rate*/
+}
+.one{
+    background-color: red;
+    /*flex-grow: 4;*/
+    /*flex-shrink: 1;*//*flex shrink determines the rate of shrinking when the size of the browser is reduced*/
+}
+.two{
+    background-color: blue;
+    /*flex-grow: 6;*/
+    /*flex-shrink: 2;*/
+}
+.three{
+    background-color: green;
+    /*flex-grow: 2;*//*growth rate is two times*/
+    /*we can also consider the flex-grow as the number of columns or the Ratio of growth ??*/
+    /*flex-shrink: 5;*/
+}
+/*short hand for all flex properties
+ flex:grow shrink basis*/
