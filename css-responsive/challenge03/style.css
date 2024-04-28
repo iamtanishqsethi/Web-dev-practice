@@ -1,0 +1,30 @@
+h1{
+    font-family:Roboto;
+    font-size: 48px;
+    color: white;
+    font-weight: 700;
+}
+p{
+    font-family: Roboto;
+    font-size: 21px;
+    color: white;
+}
+a{
+    font-family: Roboto;
+    font-size: 21px;
+    text-decoration: none;
+    color:black;
+    background-color: #38CFD9;
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin: 20px 0;
+    display: inline-block;
+    font-weight: 600;
+}
+.box{
+    background-color: #23424A;
+    padding: 5% 7%;
+}
+.content{
+    width: 50%;
+}
