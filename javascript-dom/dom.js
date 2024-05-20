@@ -75,20 +75,36 @@
 
 //createElement
 //creat a div
-var newDiv = document.createElement('div');
+// var newDiv = document.createElement('div');
 //add class
-newDiv.className='hello';
+// newDiv.className='hello';
 //add id
-newDiv.id='hello1';
+// newDiv.id='hello1';
 //add attribute
-newDiv.setAttribute('title','Hello Div')
+// newDiv.setAttribute('title','Hello Div')
 
 //create a text node
-var newDivText = document.createTextNode('hello world');
+// var newDivText = document.createTextNode('hello world');
 //add text to div
-newDiv.appendChild(newDivText);
-var container=document.querySelector('header .container');
-var h1 = document.querySelector('header h1');
-console.log(newDiv);
-container.insertBefore(newDiv,h1);
-newDiv.style.fontSize='30px';
+// newDiv.appendChild(newDivText);
+// var container=document.querySelector('header .container');
+// var h1 = document.querySelector('header h1');
+// console.log(newDiv);
+// container.insertBefore(newDiv,h1);
+// newDiv.style.fontSize='30px';
+
+//event listener
+var button=document.getElementById('button').addEventListener
+('click',buttonClick);
+function buttonClick(e){
+    // console.log('button click');
+    // document.getElementById('header-title').textContent='Changed';
+    // document.querySelector('#main').style.backgroundColor='#f4f4f4';
+    // console.log(e);
+
+    console.log(e.target);
+    console.log(e.target.className);
+    console.log(e.target.id);
+    var output=getElementById('output');
+    output.innerHTML=
+}
