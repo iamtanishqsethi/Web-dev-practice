@@ -41,9 +41,38 @@ const arr=[5,1,3,2,6]
 //     return acc
 // },0)//0 is the initial value of acc
 //finding max
-const output=arr.reduce(function(arr,curr){
-    return Math.max(arr,curr)
-},0)
+// const output=arr.reduce(function(max,curr){
+//     if(curr>max){
+//         max=curr;
+//     }
+//     return max;
+// },0)
 
 
+// console.log(output)
+//assume this data is coming from an api
+const users=[
+    {firstName:"tanishq",lastName:"sethi",age:18},
+    {firstName:"akshay",lastName:"saini",age:26},
+    {firstName:"jackson",lastName:"jackson",age:50},
+    {firstName:"jersey",lastName:"jersey",age:75},
+    {firstName:"jersey",lastName:"jersey",age:50},
+
+]
+// const output=users.map((x)=>x.firstName+" "+x.lastName);
+// console.log(output);
+
+//if we need to find how many users have particular age
+// const output=users.reduce(function (acc,curr){
+//     if(acc[curr.age]){
+//         acc[curr.age]=++acc[curr.age]
+//     }
+//     else{
+//         acc[curr.age]=1;
+//     }
+//     return acc;
+// },{})
+//need to find name of people if age is less than 30
+const output=users.filter((x)=>x.age<=30).map((x)=>x.firstName)
 console.log(output)
+
